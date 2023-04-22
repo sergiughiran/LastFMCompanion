@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AlbumHeaderView" customModule="LastFM_Companion" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="522"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="500" verticalCompressionResistancePriority="800" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6HM-Xl-G2H">
+                    <rect key="frame" x="24" y="394" width="342" height="52"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="500" verticalCompressionResistancePriority="800" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4y-80-vjU">
+                            <rect key="frame" x="140.5" y="0.0" width="61.5" height="31"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="500" verticalCompressionResistancePriority="800" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvo-pB-2zw">
+                            <rect key="frame" x="150" y="31" width="42.5" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <color key="textColor" name="captionColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7m0-Gx-duh">
+                    <rect key="frame" x="24" y="462" width="342" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uby-Ta-dWk" customClass="AlbumActionButton" customModule="LastFM_Companion" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="163" height="44"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal">
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="16" scale="medium" weight="semibold"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapSaveButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Lvp-yN-Pip"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7UA-mh-zmY" customClass="AlbumActionButton" customModule="LastFM_Companion" customModuleProvider="target">
+                            <rect key="frame" x="179" y="0.0" width="163" height="44"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal">
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="16" scale="medium" weight="semibold"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" name="captionColor"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="16" scale="medium" weight="semibold"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapInfoButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="MMx-OB-B1x"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="myM-qb-2JJ"/>
+                    </constraints>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xcM-DI-oSz">
+                    <rect key="frame" x="24" y="44" width="342" height="342"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="xcM-DI-oSz" secondAttribute="height" multiplier="1:1" id="mmp-vC-Iwn"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="7m0-Gx-duh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="Gup-cf-WHK"/>
+                <constraint firstItem="xcM-DI-oSz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="XTe-sR-Z7e"/>
+                <constraint firstItem="xcM-DI-oSz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bUB-Ee-n64"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7m0-Gx-duh" secondAttribute="trailing" constant="24" id="gNC-eB-tYN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="7m0-Gx-duh" secondAttribute="bottom" constant="16" id="gak-wa-R4J"/>
+                <constraint firstItem="xcM-DI-oSz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="gcu-Um-P81"/>
+                <constraint firstItem="6HM-Xl-G2H" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="j4c-Tm-WiU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xcM-DI-oSz" secondAttribute="trailing" constant="24" id="knK-qN-UVe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6HM-Xl-G2H" secondAttribute="trailing" constant="24" id="l3t-kh-Kly"/>
+                <constraint firstItem="xcM-DI-oSz" firstAttribute="bottom" secondItem="6HM-Xl-G2H" secondAttribute="top" constant="-8" id="oEd-Zt-G5O"/>
+                <constraint firstItem="6HM-Xl-G2H" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="qHB-jb-Dic"/>
+                <constraint firstItem="6HM-Xl-G2H" firstAttribute="bottom" secondItem="7m0-Gx-duh" secondAttribute="top" constant="-16" id="tRr-P9-uhP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="albumImageView" destination="xcM-DI-oSz" id="ztf-3K-s9M"/>
+                <outlet property="albumNameLabel" destination="j4y-80-vjU" id="DTF-ZC-0UY"/>
+                <outlet property="artistNameLabel" destination="Wvo-pB-2zw" id="Zbv-Hu-ay0"/>
+                <outlet property="infoButton" destination="7UA-mh-zmY" id="5nD-nd-2nN"/>
+                <outlet property="saveButton" destination="uby-Ta-dWk" id="HoY-ga-mNb"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="28.125"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="captionColor">
+            <color red="0.48627450980392156" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

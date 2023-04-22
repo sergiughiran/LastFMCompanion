@@ -1,0 +1,6 @@
+framework module Pods_LastFM_CompanionTests {
+  umbrella header "Pods-LastFM CompanionTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
